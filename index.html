@@ -68,6 +68,12 @@ input:invalid {
 input:valid {
   border: 2px solid black;
 }
+
+.img-fluid {
+  max-width: 500px;
+  width:100%;
+ 
+}
   </style>
 </head>
 
@@ -76,19 +82,14 @@ input:valid {
   
 
 
+    
     <section class="bg-light text-center pt-5">   
-
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 mx-auto">
                 <img src="https://leonalo.github.io/Elmowindow.jpg" alt="Elmo">
-           </section>
-                    
-                               
-                  
+                  </section>
             
-                              
-                      
                     </div>
                   </div>
                 </header>
@@ -97,52 +98,52 @@ input:valid {
       </div>
     </header>
 
-  <section class="bg-light text-center pt-5">
-    <div class="container">
-      <h2 class="mb-5">Our Services</h2>
-      <div class="row">
-        <div class="card col-xs-6 col-sm-6 col-md-6">
-         
-          <img class="card-img-top mx-auto d-block" src="https://leonalo.github.io/Dani&Simba.jpg" alt="Dani & Simba">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Cat Sitting</h5>
-            <p class="card-text">Each cat sitting session will last for an hour inclusive of feeding, cleaning of litterbox, vacuuming of surrounding area and playtime. 10% of all proceeds 
-              will go towards feeding the <a href="https://www.facebook.com/fourkittypaws/">Changi Village community cats</a>.</p>
+    <section class="bg-light text-center pt-5">
+        <div class="container">
+          <h2 class="mb-5">Our Services</h2>
+          <div class="row">
+            <div class="card col-xs-6 col-sm-6 col-md-6">
              
+              <img class="img-fluid mx-auto d-block" src="https://leonalo.github.io/Dani&Simba.jpg" alt="Dani & Simba">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Cat Sitting</h5>
+                <p class="card-text">Each cat sitting session will last for an hour inclusive of feeding, cleaning of litterbox, vacuuming of surrounding area and playtime. 10% of all proceeds 
+                  will go towards feeding the <a href="https://www.facebook.com/fourkittypaws/">Changi Village community cats</a>.</p>
+                 
+              </div>
+            </div>
+            <div class="card col-xs-6 col-sm-6 col-md-6">
+              
+                <img class="img-fluid mx-auto d-block" src="https://leonalo.github.io/Dooley.jpg" alt="Dooley">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Dog Walking</h5>
+                <p class="card-text">Each dog walking session will last for an hour inclusive of feeding.</p>
+                <h5 class="card-title">Calculate your dog's age!</h5>
+                <div class='dog-age-calculator'> 
+                  <form class='calculator'>
+                  <p> My dog is
+                  <input type="text" id ="years" placeholder="years old"/>
+                  <input type="button" value="Calculate" onclick="calculateDogAge()"/>
+                  </p>
+                  </form>
+                
+                    <p id='text'> My dog is <span id="wynik"> </span>
+                         </p>
+                </div>
+                
+                
+                
+               
+                
+                </div>
+                
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card col-xs-6 col-sm-6 col-md-6">
-          
-            <img class="card-img-top mx-auto d-block" src="https://leonalo.github.io/Dooley.jpg" alt="Dooley">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Dog Walking</h5>
-            <p class="card-text">Each dog walking session will last for an hour inclusive of feeding.</p>
-            <h5 class="card-title">Calculate your dog's age!</h5>
-            <div class='dog-age-calculator'> 
-              <form class='calculator'>
-              <p> My dog is
-              <input type="text" id ="years" placeholder="years old"/>
-              <input type="button" value="Calculate" onclick="calculateDogAge()"/>
-              </p>
-              </form>
-            
-                <p id='text'> My dog is <span id="wynik"> </span>
-                     </p>
-            </div>
-            
-            
-            
-           
-            
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
   <section id="contact">
     <div class="container">
