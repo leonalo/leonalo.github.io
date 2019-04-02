@@ -119,6 +119,18 @@ input:valid {
                 <h5 class="card-title">Cat Sitting</h5>
                 <p class="card-text">Each cat sitting session will last for an hour inclusive of feeding, cleaning of litterbox, vacuuming of surrounding area and playtime. 10% of all proceeds 
                   will go towards feeding the <a href="https://www.facebook.com/fourkittypaws/">Changi Village community cats</a>.</p>
+                  <h5 class="card-title">Calculate your cat's age!</h5>
+                <div class='cat-age-calculator'> 
+                  <form class='calculator'>
+                  <p> My cat is
+                  <input type="text" id ="years" placeholder="years old"/>
+                  <input type="button" value="Calculate" onclick="calculateCatAge()"/>
+                  </p>
+                  </form>
+                
+                    <p id='text'> My cat is <span id="cat"> </span>
+                         </p>
+                </div>
                  
               </div>
             </div>
@@ -133,12 +145,12 @@ input:valid {
                 <div class='dog-age-calculator'> 
                   <form class='calculator'>
                   <p> My dog is
-                  <input type="text" id ="years" placeholder="years old"/>
+                  <input type="text" id ="dogyears" placeholder="years old"/>
                   <input type="button" value="Calculate" onclick="calculateDogAge()"/>
                   </p>
                   </form>
                 
-                    <p id='text'> My dog is <span id="wynik"> </span>
+                    <p id='text'> My dog is <span id="dog"> </span>
                          </p>
                 </div>
                 
@@ -266,11 +278,23 @@ input:valid {
     crossorigin="anonymous"></script>
 
 <script>
-function calculateDogAge() {
+function calculateCatAge() {
+  var catAge = 0;
   var myAge= document.getElementById('years').value;
-  var dogAge = myAge * 7;
+  if (myAge == 1) {
+  catAge = 15}
+  else if (myAge == 2) {
+  catAge = 15 + 9}
+  else {catAge = 15 + 9 + myAge * 4;}
+  document.getElementById('cat').innerHTML= catAge + ' years old in human years.';
+  
+}
+
+function calculateDogAge() {
+  var myDogAge= document.getElementById('dogyears').value;
+  var dogAge = myDogAge * 7;
  
-  document.getElementById('wynik').innerHTML= dogAge + ' years old in human years.';
+  document.getElementById('dog').innerHTML= dogAge + ' years old in human years.';
   
 }
 var email = document.getElementById("email");
