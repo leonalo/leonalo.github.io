@@ -10,14 +10,11 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-  <title>Meow & Woof SG</title>
+  <title>Talk Sense Pte. Ltd.</title>
   <style>
-    
-   
     header.masthead {
-      <header class="masthead text-black text-center">
       position: relative;
-      background: url();
+      background: url('///Users/leonalo/Documents/Meow&Woof/Elmowindow.jpg');
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -68,21 +65,6 @@ input:invalid {
 input:valid {
   border: 2px solid black;
 }
-
-.img-fluid {
-    
-    height: 30vw;
-    object-fit: cover;
-    
-}
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-
   </style>
 </head>
 
@@ -90,15 +72,18 @@ input:valid {
 
   
 
-
-    
-    <section class="bg-light text-center pt-5">   
+  <header class="masthead text-black text-center">
+      <div class="overlay"></div>
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 mx-auto">
-                <img class="img-responsive mx-auto" src="https://leonalo.github.io/Elmowindow.jpg" alt="Elmo">
-                  </section>
+          <div class="col-xl-9 mx-auto">
+             
+                    
+                               
+                  
             
+                              
+                      
                     </div>
                   </div>
                 </header>
@@ -107,64 +92,52 @@ input:valid {
       </div>
     </header>
 
-    <section class="bg-light text-center pt-5">
-        <div class="container">
-          <h2 class="mb-5">Our Services</h2>
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
+  <section class="bg-light text-center pt-5">
+    <div class="container">
+      <h2 class="mb-5">Our Services</h2>
+      <div class="row">
+        <div class="card col-md-6">
+         
+          <img class="card-img-top mx-auto d-block" src="///Users/leonalo/Documents/Meow&Woof/Dani&Simba.jpg" alt="Dani & Simba">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Cat Sitting</h5>
+            <p class="card-text">Each cat sitting session will last for an hour inclusive of feeding, cleaning of litterbox, vacuuming of surrounding area and playtime. 10% of all proceeds 
+              will go towards feeding the <a href="https://www.facebook.com/fourkittypaws/">Changi Village community cats</a>.</p>
              
-              <img class="img-fluid mx-auto" src="https://leonalo.github.io/Dani&Simba.jpg" alt="Dani & Simba">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Cat Sitting</h5>
-                <p class="card-text">Each cat sitting session will last for an hour inclusive of feeding, cleaning of litterbox, vacuuming of surrounding area and playtime. 10% of all proceeds 
-                  will go towards feeding the <a href="https://www.facebook.com/fourkittypaws/">Changi Village community cats</a>.</p>
-                  <h5 class="card-title">Calculate your cat's age!</h5>
-                <div class='cat-age-calculator'> 
-                  <form class='calculator'>
-                  <p> My cat is
-                  <input type="text" id ="years" placeholder="years old"/>
-                  <input type="button" value="Calculate" onclick="calculateCatAge()"/>
-                  </p>
-                  </form>
-                
-                    <p id='text'> My cat is <span id="cat"> </span>
-                         </p>
-                </div>
-                 
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              
-                <img class="img-fluid mx-auto" src="https://leonalo.github.io/Dooley.jpg" alt="Dooley">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Dog Walking</h5>
-                <p class="card-text">Each dog walking session will last for an hour inclusive of feeding.</p>
-                <h5 class="card-title">Calculate your dog's age!</h5>
-                <div class='dog-age-calculator'> 
-                  <form class='calculator'>
-                  <p> My dog is
-                  <input type="text" id ="dogyears" placeholder="years old"/>
-                  <input type="button" value="Calculate" onclick="calculateDogAge()"/>
-                  </p>
-                  </form>
-                
-                    <p id='text'> My dog is <span id="dog"> </span>
-                         </p>
-                </div>
-                
-                
-                
-               
-                
-                </div>
-                
-              </div>
-            </div>
           </div>
         </div>
-      </section>
+        <div class="card col-md-6">
+          
+            <img class="card-img-top mx-auto d-block" src="///Users/leonalo/Documents/Meow&Woof/Dooley.jpg" alt="Dooley">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Dog Walking</h5>
+            <p class="card-text">Each dog walking session will last for an hour inclusive of feeding.</p>
+            <h5 class="card-title">Calculate your dog's age!</h5>
+            <div class='dog-age-calculator'> 
+              <form class='calculator'>
+              <p> My dog is
+              <input type="text" id ="years" placeholder="years old"/>
+              <input type="button" value="Calculate" onclick="calculateDogAge()"/>
+              </p>
+              </form>
+            
+                <p id='text'> My dog is <span id="wynik"> </span>
+                     </p>
+            </div>
+            
+            
+            
+           
+            
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="contact">
     <div class="container">
@@ -186,8 +159,8 @@ input:valid {
   <div class="row">
 
       <!--Grid column-->
-      <div class="col-sm-6">
-          <div class="sm-form mb-0">
+      <div class="col-md-6">
+          <div class="md-form mb-0">
               <input type="text" id="name" name="name" class="form-control" required>
               <label for="name" class="">Your name</label>
           </div>
@@ -195,8 +168,8 @@ input:valid {
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-sm-6">
-          <div class="sm-form mb-0">
+      <div class="col-md-6">
+          <div class="md-form mb-0">
               <input type="email" id="email" name="email" class="form-control" required>
               <label for="email" class="">Your email</label>
           </div>
@@ -227,9 +200,9 @@ input:valid {
   <div class="row">
 
       <!--Grid column-->
-      <div class="col-sm-12">
+      <div class="col-md-12">
 
-          <div class="sm-form">
+          <div class="md-form">
               <input type="text" id="message" name="message" rows="2" class="form-control md-textarea" required>
               <label for="message">Your message</label>
           </div>
@@ -250,7 +223,32 @@ input:valid {
 
 </form>
 
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
 
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="405660180167009"
+  theme_color="#a695c7"
+  logged_in_greeting="Hi! How can we help you?  Are you keen on our cat sitting or dog waking service?"
+  logged_out_greeting="Hi! How can we help you?  Are you keen on our cat sitting or dog waking service?">
+</div>
 
           
         <!--Grid column-->
@@ -261,7 +259,7 @@ input:valid {
 
     <div class="col text-center">
 
-      <small>&copy;Meow & Woof SG</small>
+      <small>&copy;Meow & Woof</small>
       &middot;
       <small>Photos from pet owner's private collection
       </small>
@@ -278,23 +276,11 @@ input:valid {
     crossorigin="anonymous"></script>
 
 <script>
-function calculateCatAge() {
-  var catAge = 0;
-  var myAge= document.getElementById('years').value;
-  if (myAge == 1) {
-  catAge = 15}
-  else if (myAge == 2) {
-  catAge = 15 + 9}
-  else {catAge = 15 + 9 + myAge * 4;}
-  document.getElementById('cat').innerHTML= catAge + ' years old in human years.';
-  
-}
-
 function calculateDogAge() {
-  var myDogAge= document.getElementById('dogyears').value;
-  var dogAge = myDogAge * 7;
+  var myAge= document.getElementById('years').value;
+  var dogAge = myAge * 7;
  
-  document.getElementById('dog').innerHTML= dogAge + ' years old in human years.';
+  document.getElementById('wynik').innerHTML= dogAge + ' years old in human years.';
   
 }
 var email = document.getElementById("email");
