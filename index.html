@@ -243,15 +243,7 @@ input:valid {
   </div>
 
   
-  <div id="fb-root"></div>
-<!-- Your customer chat code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="405660180167009"
-  theme_color="#a695c7"
-  logged_in_greeting="Hi! How can we help you?  Are you keen on our cat sitting or dog waking service?"
-  logged_out_greeting="Hi! How can we help you?  Are you keen on our cat sitting or dog waking service?">
-</div>
+  
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -280,26 +272,6 @@ email.addEventListener("input", function (event) {
 });
 
 </script>
-<!-- Load Facebook SDK for JavaScript -->
-
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v3.2'
-    });
-  };
-
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-</script>
-
 
 </body>
 
